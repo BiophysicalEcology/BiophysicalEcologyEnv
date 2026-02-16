@@ -30,4 +30,5 @@ jobs:
             Pkg.test("HeatExchange")
             Pkg.test("BiophysicalBehaviour")
             Pkg.test("FluidProperties")
+            Pkg.test("Microclimate")
           '

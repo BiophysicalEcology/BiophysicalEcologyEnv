@@ -1299,7 +1299,7 @@ version = "0.5.3"
 
 [[deps.Microclimate]]
 deps = ["ConstructionBase", "DataStructures", "Dates", "DelimitedFiles", "FluidProperties", "Interpolations", "ModelParameters", "OrdinaryDiffEqTsit5", "SciMLBase", "SolarRadiation", "SpecialFunctions", "StaticArrays", "Statistics", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "be0decf1d5b2161dfb378c47d2fcced4feff069e"
+git-tree-sha1 = "f29bd3366ce9ba9f13338bb93444d24cc7abf0a8"
 repo-rev = "main"
 repo-url = "https://github.com/BiophysicalEcology/Microclimate.jl"
 uuid = "fa5d2a79-de00-40ba-a9f4-ff140fbe07ba"
