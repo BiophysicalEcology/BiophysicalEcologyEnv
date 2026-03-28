@@ -2,7 +2,7 @@
 
 julia_version = "1.12.5"
 manifest_format = "2.0"
-project_hash = "b5a25b509bd80807e546f0d42859a09538b27a76"
+project_hash = "554eb5cb0a5c9c1f5ee05efc9df1c4739dfef17d"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "f7304359109c768cf32dc5fa2d371565bb63b68a"
@@ -221,10 +221,8 @@ uuid = "06c61620-4f66-4020-a018-07befe374221"
 version = "0.1.0"
 
 [[deps.BiophysicalGrids]]
-deps = ["ConstructionBase", "Dates", "Flatten", "FluidProperties", "GeoFormatTypes", "Geomorphometry", "Microclimate", "ModelParameters", "NCDatasets", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "Statistics", "Unitful", "UnitfulMoles", "Zarr"]
-git-tree-sha1 = "a6c372942ff54ce6e9f62130b2d1c2841a3f3b94"
-repo-rev = "main"
-repo-url = "https://github.com/BiophysicalEcology/BiophysicalGrids.jl"
+deps = ["ConstructionBase", "Dates", "DimensionalData", "Flatten", "FluidProperties", "GeoFormatTypes", "Geomorphometry", "Microclimate", "ModelParameters", "NCDatasets", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "Statistics", "Unitful", "UnitfulMoles", "Zarr"]
+path = "c:/git/BiophysicalGrids.jl"
 uuid = "9596eb72-5668-4efb-b507-d457af0b929e"
 version = "0.1.0"
 
