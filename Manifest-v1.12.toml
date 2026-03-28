@@ -221,7 +221,7 @@ uuid = "06c61620-4f66-4020-a018-07befe374221"
 version = "0.1.0"
 
 [[deps.BiophysicalGrids]]
-deps = ["ConstructionBase", "Dates", "DimensionalData", "Flatten", "FluidProperties", "GeoFormatTypes", "Geomorphometry", "Microclimate", "ModelParameters", "NCDatasets", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "Statistics", "Unitful", "UnitfulMoles", "Zarr"]
+deps = ["ConstructionBase", "Dates", "DimensionalData", "Flatten", "FluidProperties", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "Microclimate", "ModelParameters", "NCDatasets", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "Statistics", "Unitful", "UnitfulMoles", "Zarr"]
 path = "c:/git/BiophysicalGrids.jl"
 uuid = "9596eb72-5668-4efb-b507-d457af0b929e"
 version = "0.1.0"
@@ -905,7 +905,7 @@ version = "0.4.3"
 
 [[deps.FluidProperties]]
 deps = ["Unitful", "UnitfulMoles"]
-git-tree-sha1 = "8316ef7c256edc4e682fe03597ffdf67e4b5eb52"
+git-tree-sha1 = "6ed0ba252f4e15f574934f3c1ca3af30b1bc597a"
 repo-rev = "main"
 repo-url = "https://github.com/BiophysicalEcology/FluidProperties.jl"
 uuid = "d16f1b92-71d3-42f3-aafa-43e5bb0efda8"
