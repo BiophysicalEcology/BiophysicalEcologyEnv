@@ -195,12 +195,16 @@ uuid = "17159459-d6a3-4a3d-a4c5-9872d9e70704"
 version = "0.1.0"
 
 [[deps.BiophysicalGeometry]]
-deps = ["DataFrames", "DataStructures", "FluidProperties", "ModelParameters", "Roots", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "8cf695dc1948193ed481a9ad6b8b5b3ad5b89273"
-repo-rev = "endotherm-model"
+deps = ["Unitful"]
+git-tree-sha1 = "ffb950aee751ccc9065432ea96347c246864b944"
+repo-rev = "characteristic-dimension-options"
 repo-url = "https://github.com/BiophysicalEcology/BiophysicalGeometry.jl"
 uuid = "06c61620-4f66-4020-a018-07befe374221"
 version = "0.1.0"
+weakdeps = ["Makie"]
+
+    [deps.BiophysicalGeometry.extensions]
+    BiophysicalGeometryMakieExt = "Makie"
 
 [[deps.BiophysicalGrids]]
 deps = ["ConstructionBase", "Dates", "DimensionalData", "Flatten", "FluidProperties", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "Microclimate", "ModelParameters", "NCDatasets", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "Statistics", "Unitful", "UnitfulMoles", "Zarr"]
@@ -1098,8 +1102,8 @@ version = "8.5.1+0"
 
 [[deps.HeatExchange]]
 deps = ["BiophysicalGeometry", "ConstructionBase", "FluidProperties", "ModelParameters", "Roots", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "0a70a41712c9096df4f600c38a65aeec18ac972e"
-repo-rev = "main"
+git-tree-sha1 = "c67de38b8690fd73430ac6c49478c03453df1c52"
+repo-rev = "leaf-evaporation"
 repo-url = "https://github.com/BiophysicalEcology/HeatExchange.jl"
 uuid = "720bd838-cdd6-4aad-926b-452b962dce21"
 version = "0.1.0"
