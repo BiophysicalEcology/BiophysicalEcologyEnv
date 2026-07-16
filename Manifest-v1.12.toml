@@ -1974,8 +1974,8 @@ weakdeps = ["Makie"]
 
 [[deps.MicroclimateMapper]]
 deps = ["ArchGDAL", "CommonSolve", "ConstructionBase", "DataInterpolations", "Dates", "Downloads", "FillArrays", "Flatten", "FluidProperties", "GLMakie", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "JSON3", "Microclimate", "ModelParameters", "NCDatasets", "PointDataSources", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "StaticArrays", "Statistics", "URIs", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "e58ac0a03dba78f7a420c5ecee26e21a778b3297"
-repo-rev = "main"
+git-tree-sha1 = "9772238a42fa0198b3d4de8758848ddf1dc994d0"
+repo-rev = "point_query"
 repo-url = "http://github.com/BiophysicalEcology/MicroclimateMapper.jl"
 uuid = "e0e7f0f3-f3e4-4128-a017-ba7c8101b3e1"
 version = "0.1.0"
