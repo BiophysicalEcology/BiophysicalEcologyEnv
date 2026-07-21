@@ -2895,7 +2895,7 @@ version = "0.1.1"
 
 [[deps.SolarRadiation]]
 deps = ["Dates", "ModelParameters", "SpecialFunctions", "StaticArrays", "Unitful"]
-git-tree-sha1 = "6f6ccff9cd91a5e5dce4a95b41713099bb811661"
+git-tree-sha1 = "b06c87f74da99a07c6b6c057e96690edccec1650"
 repo-rev = "main"
 repo-url = "https://github.com/BiophysicalEcology/SolarRadiation.jl"
 uuid = "d01e3663-6acb-4162-92ee-c50acb918cac"
