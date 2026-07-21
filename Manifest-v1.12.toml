@@ -250,7 +250,7 @@ weakdeps = ["Makie"]
 
 [[deps.BiophysicalBehaviour]]
 deps = ["BiophysicalGeometry", "ConstructionBase", "DataInterpolations", "Enzyme", "Flatten", "FluidProperties", "HeatExchange", "Ipopt", "LinearAlgebra", "ModelParameters", "OrdinaryDiffEqTsit5", "Roots", "Setfield", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "dd9a97ea5e7ad5a3b075a4f117e5116b619b75a2"
+git-tree-sha1 = "a6885086f9b919b7b4b9393657763163fdb874f7"
 repo-rev = "transient-model"
 repo-url = "http://github.com/BiophysicalEcology/BiophysicalBehaviour.jl"
 uuid = "17159459-d6a3-4a3d-a4c5-9872d9e70704"
@@ -1055,7 +1055,7 @@ version = "0.4.3"
 
 [[deps.FluidProperties]]
 deps = ["Unitful", "UnitfulMoles"]
-git-tree-sha1 = "5d55aa7008ba97c786e4681647a170a73a9ebe3d"
+git-tree-sha1 = "6d56fe0abaace8f26a3eef8f374f2f6a72a622d3"
 repo-rev = "main"
 repo-url = "https://github.com/BiophysicalEcology/FluidProperties.jl"
 uuid = "d16f1b92-71d3-42f3-aafa-43e5bb0efda8"
@@ -1336,7 +1336,7 @@ version = "0.2.0"
 
 [[deps.HeatExchange]]
 deps = ["BiophysicalGeometry", "ConstructionBase", "FluidProperties", "ModelParameters", "Roots", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "ab74fca0872e494696609ba9a2c892c9426fdb24"
+git-tree-sha1 = "87b5bd731dc08430a4f40782099439c9033cf82d"
 repo-rev = "transient-model"
 repo-url = "http://github.com/BiophysicalEcology/HeatExchange.jl"
 uuid = "720bd838-cdd6-4aad-926b-452b962dce21"
@@ -1961,10 +1961,10 @@ uuid = "7269a6da-0436-5bbc-96c2-40638cbb6118"
 version = "0.5.3"
 
 [[deps.Microclimate]]
-deps = ["CommonSolve", "ConstructionBase", "Dates", "DelimitedFiles", "FluidProperties", "Interpolations", "ModelParameters", "OrdinaryDiffEqAdamsBashforthMoulton", "OrdinaryDiffEqCore", "OrdinaryDiffEqTsit5", "SciMLBase", "SolarRadiation", "SpecialFunctions", "StaticArrays", "Statistics", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "0414bf3b4c15a2544e2d13b4336aa4acc3d7aaa4"
-repo-rev = "main"
-repo-url = "https://github.com/BiophysicalEcology/Microclimate.jl"
+deps = ["BiophysicalGeometry", "CommonSolve", "ConstructionBase", "Dates", "DelimitedFiles", "FluidProperties", "HeatExchange", "Interpolations", "LinearAlgebra", "ModelParameters", "OrdinaryDiffEqAdamsBashforthMoulton", "OrdinaryDiffEqCore", "OrdinaryDiffEqTsit5", "SciMLBase", "SolarRadiation", "SpecialFunctions", "StaticArrays", "Statistics", "Unitful", "UnitfulMoles"]
+git-tree-sha1 = "2bb6ce8746e952bcdcf51a37a910c6aa2ff1f96a"
+repo-rev = "canopy"
+repo-url = "http://github.com/BiophysicalEcology/Microclimate.jl"
 uuid = "fa5d2a79-de00-40ba-a9f4-ff140fbe07ba"
 version = "0.1.0"
 weakdeps = ["Makie"]
@@ -1973,9 +1973,9 @@ weakdeps = ["Makie"]
     MicroclimateMakieExt = "Makie"
 
 [[deps.MicroclimateMapper]]
-deps = ["ArchGDAL", "CommonSolve", "ConstructionBase", "DataInterpolations", "Dates", "Downloads", "FillArrays", "Flatten", "FluidProperties", "GLMakie", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "JSON3", "Microclimate", "ModelParameters", "NCDatasets", "PointDataSources", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "StaticArrays", "Statistics", "URIs", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "9772238a42fa0198b3d4de8758848ddf1dc994d0"
-repo-rev = "point_query"
+deps = ["ArchGDAL", "BiophysicalGeometry", "CommonSolve", "ConstructionBase", "DataInterpolations", "Dates", "Downloads", "FillArrays", "Flatten", "FluidProperties", "GLMakie", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "HeatExchange", "JSON3", "Microclimate", "ModelParameters", "NCDatasets", "PointDataSources", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "StaticArrays", "Statistics", "URIs", "Unitful", "UnitfulMoles"]
+git-tree-sha1 = "7fdc734942785b8a5407a86567e570b92aec617b"
+repo-rev = "canopy"
 repo-url = "http://github.com/BiophysicalEcology/MicroclimateMapper.jl"
 uuid = "e0e7f0f3-f3e4-4128-a017-ba7c8101b3e1"
 version = "0.1.0"
