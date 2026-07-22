@@ -2,7 +2,7 @@
 
 julia_version = "1.12.6"
 manifest_format = "2.0"
-project_hash = "0e62cb26b4ddb573872be24bcea9be70a02ad336"
+project_hash = "010d978de56fcb30ad506c68afcd5f9202343c29"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "ec6be48a85c93d995563b84bff8a86bc98df45ce"
@@ -1041,6 +1041,24 @@ git-tree-sha1 = "acb3ed7a72a4f8736d6f34454306cbbe24e63cb2"
 uuid = "64ca27bc-2ba2-4a57-88aa-44e436879224"
 version = "3.2.0"
 
+[[deps.FiniteDiff]]
+deps = ["ArrayInterface", "LinearAlgebra", "Setfield"]
+git-tree-sha1 = "07e98e3f332ee60179813dd9cdf21412e3c0a96a"
+uuid = "6a86dc24-6348-571c-b903-95158fe2bd41"
+version = "2.32.0"
+
+    [deps.FiniteDiff.extensions]
+    FiniteDiffBandedMatricesExt = "BandedMatrices"
+    FiniteDiffBlockBandedMatricesExt = "BlockBandedMatrices"
+    FiniteDiffSparseArraysExt = "SparseArrays"
+    FiniteDiffStaticArraysExt = "StaticArrays"
+
+    [deps.FiniteDiff.weakdeps]
+    BandedMatrices = "aae01518-5342-5314-be14-df237901396f"
+    BlockBandedMatrices = "ffab5731-97b5-5995-9138-79e8c1846df0"
+    SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+    StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
 [[deps.FixedPointNumbers]]
 deps = ["Random", "Statistics"]
 git-tree-sha1 = "59af96b98217c6ef4ae0dfe065ac7c20831d1a84"
@@ -1841,6 +1859,12 @@ git-tree-sha1 = "8b6ba8759d80f313a92545246c8dad2a7e8e7b4e"
 uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
 version = "3.7.2"
 
+[[deps.LsqFit]]
+deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "NLSolversBase", "Printf", "StatsAPI"]
+git-tree-sha1 = "f386224fa41af0c27f45e2f9a8f323e538143b43"
+uuid = "2fda8390-95c7-5789-9bda-21331edee243"
+version = "0.15.1"
+
 [[deps.Lz4_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
 git-tree-sha1 = "191686b1ac1ea9c89fc52e996ad15d1d241d1e33"
@@ -2056,6 +2080,12 @@ version = "0.14.15"
 
     [deps.NCDatasets.weakdeps]
     MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+
+[[deps.NLSolversBase]]
+deps = ["ADTypes", "DifferentiationInterface", "Distributed", "FiniteDiff", "ForwardDiff"]
+git-tree-sha1 = "25a6638571a902ecfb1ae2a18fc1575f86b1d4df"
+uuid = "d41bc354-129a-5804-8e4c-c37616107c6c"
+version = "7.10.0"
 
 [[deps.NaNMath]]
 deps = ["OpenLibm_jll"]
@@ -3125,6 +3155,18 @@ version = "0.1.1"
 deps = ["InteractiveUtils", "Logging", "Random", "Serialization"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 version = "1.11.0"
+
+[[deps.ThermalPhysiology]]
+deps = ["LsqFit", "Roots", "Statistics", "Unitful"]
+git-tree-sha1 = "0c768570fe1c3784c1819d211b2dec3c85a1afef"
+repo-rev = "main"
+repo-url = "https://github.com/BiophysicalEcology/ThermalPhysiology.jl"
+uuid = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+version = "0.1.0"
+weakdeps = ["Makie"]
+
+    [deps.ThermalPhysiology.extensions]
+    ThermalPhysiologyMakieExt = "Makie"
 
 [[deps.ThreadingUtilities]]
 deps = ["ManualMemory"]
