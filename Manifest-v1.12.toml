@@ -2,7 +2,7 @@
 
 julia_version = "1.12.6"
 manifest_format = "2.0"
-project_hash = "4f6a96588a4fa1a69f8ae3fe18dd18da3df79b18"
+project_hash = "a11c48052f81e8c4f70bc73320d5b45cf949610f"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "ec6be48a85c93d995563b84bff8a86bc98df45ce"
