@@ -250,7 +250,7 @@ weakdeps = ["Makie"]
 
 [[deps.BiophysicalBehaviour]]
 deps = ["BiophysicalGeometry", "ConstructionBase", "DataInterpolations", "Enzyme", "Flatten", "FluidProperties", "HeatExchange", "Ipopt", "LinearAlgebra", "ModelParameters", "OrdinaryDiffEqTsit5", "Roots", "Setfield", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "a6885086f9b919b7b4b9393657763163fdb874f7"
+git-tree-sha1 = "32dc5556c5046505712ecd2687f8ad87884510e9"
 repo-rev = "transient-model"
 repo-url = "http://github.com/BiophysicalEcology/BiophysicalBehaviour.jl"
 uuid = "17159459-d6a3-4a3d-a4c5-9872d9e70704"
