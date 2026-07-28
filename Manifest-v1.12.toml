@@ -1451,7 +1451,7 @@ version = "0.2.0"
 
 [[deps.HeatExchange]]
 deps = ["BiophysicalGeometry", "ConstructionBase", "FluidProperties", "ModelParameters", "Roots", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "b35040342041cb265c16285955e35f3dce143fb1"
+git-tree-sha1 = "2e7e50444874df84795ed0b04b2a1501a04516da"
 repo-rev = "transient-model"
 repo-url = "http://github.com/BiophysicalEcology/HeatExchange.jl"
 uuid = "720bd838-cdd6-4aad-926b-452b962dce21"
