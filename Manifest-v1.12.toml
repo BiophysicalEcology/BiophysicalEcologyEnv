@@ -2094,8 +2094,8 @@ weakdeps = ["Makie"]
     MicroclimateMakieExt = "Makie"
 
 [[deps.MicroclimateMapper]]
-deps = ["ArchGDAL", "BiophysicalGeometry", "CommonSolve", "ConstructionBase", "DataInterpolations", "Dates", "Downloads", "FillArrays", "Flatten", "FluidProperties", "GLMakie", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "HeatExchange", "JSON3", "Microclimate", "ModelParameters", "NCDatasets", "PointDataSources", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "StaticArrays", "Statistics", "URIs", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "9d0c3d53ec337b701667f274e20dd5b40d339990"
+deps = ["ArchGDAL", "BiophysicalGeometry", "CommonSolve", "ConstructionBase", "DataInterpolations", "Dates", "Downloads", "FillArrays", "Flatten", "FluidProperties", "GLMakie", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "HeatExchange", "JSON3", "Microclimate", "ModelParameters", "NCDatasets", "PointDataSources", "Proj", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "StaticArrays", "Statistics", "URIs", "Unitful", "UnitfulMoles"]
+git-tree-sha1 = "4b23a9b57629ff42c2a4d3644ccf8e89462824b8"
 repo-rev = "canopy"
 repo-url = "http://github.com/BiophysicalEcology/MicroclimateMapper.jl"
 uuid = "e0e7f0f3-f3e4-4128-a017-ba7c8101b3e1"
@@ -2662,8 +2662,8 @@ version = "0.3.2"
 
 [[deps.RasterDataSources]]
 deps = ["ASCIIrasters", "Dates", "DelimitedFiles", "Extents", "HTTP", "JSON", "URIs", "ZipFile"]
-git-tree-sha1 = "dfeaea7f7fd5a0f9dc6dbd265e96416370b4e561"
-repo-rev = "better_ncep_crucl2_gridmet_elev"
+git-tree-sha1 = "fd95d4264ed8ae88c0be290a6ec249c685fa3ea9"
+repo-rev = "barra-soilgrids"
 repo-url = "https://github.com/mrke/RasterDataSources.jl"
 uuid = "3cb90ccd-e1b6-4867-9617-4276c8b2ca36"
 version = "0.8.0"
