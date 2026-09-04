@@ -238,7 +238,9 @@ weakdeps = ["Makie"]
 
 [[deps.BiophysicalBehaviour]]
 deps = ["BiophysicalGeometry", "ComponentArrays", "ConstructionBase", "DataInterpolations", "Enzyme", "Flatten", "FluidProperties", "HeatExchange", "Ipopt", "LinearAlgebra", "ModelParameters", "OrdinaryDiffEqTsit5", "Roots", "Setfield", "Unitful", "UnitfulMoles"]
-path = "C:/git/BiophysicalBehaviour.jl"
+git-tree-sha1 = "108a3606b3af7f0b41cdca2fdb03ffbba5e20f62"
+repo-rev = "arrest"
+repo-url = "https://github.com/BiophysicalEcology/BiophysicalBehaviour.jl"
 uuid = "17159459-d6a3-4a3d-a4c5-9872d9e70704"
 version = "0.1.0"
 
@@ -2161,7 +2163,9 @@ weakdeps = ["Makie"]
 
 [[deps.MicroclimateMapper]]
 deps = ["ArchGDAL", "BiophysicalGeometry", "CommonSolve", "ConstructionBase", "DataInterpolations", "Dates", "Downloads", "FillArrays", "Flatten", "FluidProperties", "GLMakie", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "HeatExchange", "JSON3", "Microclimate", "ModelParameters", "NCDatasets", "PointDataSources", "Proj", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "StaticArrays", "Statistics", "URIs", "Unitful", "UnitfulMoles"]
-path = "c:/git/MicroclimateMapper.jl"
+git-tree-sha1 = "5699f4d9d03f7dce08ba1bccc7f4bf2b96ef9111"
+repo-rev = "ecmwfera5"
+repo-url = "https://github.com/BiophysicalEcology/MicroclimateMapper.jl"
 uuid = "e0e7f0f3-f3e4-4128-a017-ba7c8101b3e1"
 version = "0.1.0"
 weakdeps = ["Makie", "ZarrDatasets"]
@@ -2731,7 +2735,9 @@ version = "0.3.2"
 
 [[deps.RasterDataSources]]
 deps = ["ASCIIrasters", "CRC32c", "Dates", "DelimitedFiles", "Extents", "HTTP", "JSON", "URIs", "ZipFile"]
-path = "c:/git/RasterDataSources.jl"
+git-tree-sha1 = "c663cfefa79e629c0a7b00eafd6e114178cfea76"
+repo-rev = "franken-branch"
+repo-url = "https://github.com/mrke/RasterDataSources.jl"
 uuid = "3cb90ccd-e1b6-4867-9617-4276c8b2ca36"
 version = "0.8.0"
 weakdeps = ["Proj", "Zarr"]
@@ -2742,7 +2748,9 @@ weakdeps = ["Proj", "Zarr"]
 
 [[deps.Rasters]]
 deps = ["Adapt", "ColorTypes", "CommonDataModel", "ConstructionBase", "Dates", "DimensionalData", "DiskArrays", "Extents", "FillArrays", "Flatten", "GeoFormatTypes", "GeoInterface", "GeometryOpsCore", "LinearAlgebra", "Missings", "Mmap", "OffsetArrays", "ProgressMeter", "RecipesBase", "Reexport", "Setfield", "Statistics"]
-path = "c:/git/Rasters.jl"
+git-tree-sha1 = "92864eca99887f279908ef7ab9b78c8cac28c02a"
+repo-rev = "rasterdatasources-0.8-compat"
+repo-url = "https://github.com/mrke/Rasters.jl"
 uuid = "a3a2b9e3-a471-40c9-b274-f788e487c689"
 version = "0.15.1"
 
@@ -3324,7 +3332,9 @@ version = "1.11.0"
 
 [[deps.ThermalPhysiology]]
 deps = ["LsqFit", "Roots", "Statistics", "Unitful"]
-path = "c:/git/ThermalPhysiology.jl"
+git-tree-sha1 = "9499cb2495f673ef641c1b80a2ee5dcaa33142b0"
+repo-rev = "main"
+repo-url = "https://github.com/BiophysicalEcology/ThermalPhysiology.jl"
 uuid = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 version = "0.1.0"
 
