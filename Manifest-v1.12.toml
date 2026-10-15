@@ -2,7 +2,7 @@
 
 julia_version = "1.12.6"
 manifest_format = "2.0"
-project_hash = "d8f622372cf5c51872f4b62b7150a25eebbf7708"
+project_hash = "0e56cb3d02fb3d012a0985937eb4d47d715e4495"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "ec6be48a85c93d995563b84bff8a86bc98df45ce"
@@ -226,7 +226,7 @@ version = "1.4.0"
 
 [[deps.BiologicalScaling]]
 deps = ["Unitful"]
-git-tree-sha1 = "8747dffa5ea0177f583a2dba269e256b06ea8439"
+git-tree-sha1 = "519f1d7708a69e5bac3bd5c2a234fc7c54534627"
 repo-rev = "main"
 repo-url = "http://github.com/BiophysicalEcology/BiologicalScaling.jl"
 uuid = "726553fe-cdfb-47ef-9d36-6d238d32ce3c"
@@ -240,13 +240,13 @@ weakdeps = ["Makie"]
 deps = ["BiophysicalGeometry", "ComponentArrays", "ConstructionBase", "DataInterpolations", "Enzyme", "Flatten", "FluidProperties", "HeatExchange", "Ipopt", "LinearAlgebra", "ModelParameters", "OrdinaryDiffEqTsit5", "Roots", "Setfield", "Unitful", "UnitfulMoles"]
 git-tree-sha1 = "3462c02772d3ff229a8eb52f5cfb743da1277f14"
 repo-rev = "arrest"
-repo-url = "http://github.com/BiophysicalEcology/BiophysicalBehaviour.jl"
+repo-url = "https://github.com/BiophysicalEcology/BiophysicalBehaviour.jl"
 uuid = "17159459-d6a3-4a3d-a4c5-9872d9e70704"
 version = "0.1.0"
 
 [[deps.BiophysicalGeometry]]
 deps = ["Unitful"]
-git-tree-sha1 = "e1ba6d1765299366fcdc481c5b1389ee6516c409"
+git-tree-sha1 = "c03dce864f95a175d81a0b7f314316dc7a45d20a"
 repo-rev = "main"
 repo-url = "https://github.com/BiophysicalEcology/BiophysicalGeometry.jl"
 uuid = "06c61620-4f66-4020-a018-07befe374221"
@@ -1422,7 +1422,7 @@ version = "8.5.1+0"
 
 [[deps.HeatExchange]]
 deps = ["BiophysicalGeometry", "ConstructionBase", "FluidProperties", "ModelParameters", "Roots", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "78431b9f9188c92afb028847b95bb08a16c71f49"
+git-tree-sha1 = "981377c9ae3d8582e5ae9d6a17293159e20ffb44"
 repo-rev = "transient-model"
 repo-url = "http://github.com/BiophysicalEcology/HeatExchange.jl"
 uuid = "720bd838-cdd6-4aad-926b-452b962dce21"
@@ -2163,16 +2163,22 @@ weakdeps = ["Makie"]
 
 [[deps.MicroclimateMapper]]
 deps = ["ArchGDAL", "BiophysicalGeometry", "CommonSolve", "ConstructionBase", "DataInterpolations", "Dates", "Downloads", "FillArrays", "Flatten", "FluidProperties", "GLMakie", "GeoFormatTypes", "GeoInterface", "Geomorphometry", "HeatExchange", "JSON3", "Microclimate", "ModelParameters", "NCDatasets", "PointDataSources", "Proj", "RasterDataSources", "Rasters", "Setfield", "SolarRadiation", "StaticArrays", "Statistics", "URIs", "Unitful", "UnitfulMoles"]
-git-tree-sha1 = "5699f4d9d03f7dce08ba1bccc7f4bf2b96ef9111"
-repo-rev = "ecmwfera5"
+git-tree-sha1 = "d8c7b4873dedbea59a090031c3057c8ce59c944e"
+repo-rev = "seas5"
 repo-url = "https://github.com/BiophysicalEcology/MicroclimateMapper.jl"
 uuid = "e0e7f0f3-f3e4-4128-a017-ba7c8101b3e1"
 version = "0.1.0"
-weakdeps = ["Makie", "ZarrDatasets"]
 
     [deps.MicroclimateMapper.extensions]
+    MicroclimateMapperAppExt = ["Bonito", "WGLMakie"]
     MicroclimateMapperMakieExt = "Makie"
     MicroclimateMapperZarrExt = "ZarrDatasets"
+
+    [deps.MicroclimateMapper.weakdeps]
+    Bonito = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
+    Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+    WGLMakie = "276b4fcb-3e11-5398-bf8b-a0c2d153d008"
+    ZarrDatasets = "519a4cdf-1362-424a-9ea1-b1d782dbb24b"
 
 [[deps.MicrosoftMPI_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -2544,9 +2550,9 @@ version = "1.41.6"
     Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [[deps.PointDataSources]]
-deps = ["CSV", "Dates", "HTTP", "JSON", "NCDatasets", "RasterDataSources", "URIs"]
-git-tree-sha1 = "61c5db5241df96d1b40fdc55afa56f4ded18325b"
-repo-rev = "main"
+deps = ["CSV", "Dates", "Extents", "HTTP", "JSON", "NCDatasets", "RasterDataSources", "URIs"]
+git-tree-sha1 = "ae86fd7588d0096820f3dc6ff304739bebefcd6b"
+repo-rev = "seas5"
 repo-url = "https://github.com/BiophysicalEcology/PointDataSources.jl"
 uuid = "8cbab062-ff6a-44c2-92ab-f364c212cc46"
 version = "0.1.0"
@@ -2735,8 +2741,8 @@ version = "0.3.2"
 
 [[deps.RasterDataSources]]
 deps = ["ASCIIrasters", "CRC32c", "Dates", "DelimitedFiles", "Extents", "HTTP", "JSON", "URIs", "ZipFile"]
-git-tree-sha1 = "c663cfefa79e629c0a7b00eafd6e114178cfea76"
-repo-rev = "franken-branch"
+git-tree-sha1 = "6e51a3781075e0113beb6a203828e9952284ba32"
+repo-rev = "franken-seas5"
 repo-url = "https://github.com/mrke/RasterDataSources.jl"
 uuid = "3cb90ccd-e1b6-4867-9617-4276c8b2ca36"
 version = "0.8.0"
@@ -3332,10 +3338,10 @@ version = "1.11.0"
 
 [[deps.ThermalPhysiology]]
 deps = ["LsqFit", "Roots", "Statistics", "Unitful"]
-git-tree-sha1 = "de77c6290e6aac7246489f8929a56d8cc508f35d"
+git-tree-sha1 = "cd42913bbd50f24f9fd6664a1b41c5f604277409"
 repo-rev = "main"
 repo-url = "https://github.com/BiophysicalEcology/ThermalPhysiology.jl"
-uuid = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+uuid = "fd6ff93b-c437-4546-a1f5-e3637492e8ee"
 version = "0.1.0"
 
 [[deps.ThreadingUtilities]]
